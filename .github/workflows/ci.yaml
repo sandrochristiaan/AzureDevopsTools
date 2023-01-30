@@ -1,9 +1,10 @@
-name: ci
+name: Integration Tests
+
 on: [pull_request]
 
 jobs:
-  lint-with-PSScriptAnalyzer:
-    name: Install and run PSScriptAnalyzer
+  lint:
+    name: Lint using PSScriptAnalyzer
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
