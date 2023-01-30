@@ -1,6 +1,6 @@
-# GitHubWorkflowTools
+# AzureDevOpsTools
 
 ## Description
 
-This repository includes a few Powershell scripts/functions to retrieve information about GitHub workflow runs using the gh api.
-The goal is to provide a simple way to retrieve information about workflow runs and to be able to use this information in other scripts.
+This repository includes a few scripts/functions to get, create & delete resources in an Azure DevOps organization the REST api.
+The goal is to provide a simple Powershell way to interact with the Azure DevOps REST api.
