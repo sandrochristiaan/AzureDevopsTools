@@ -6,6 +6,10 @@ function New-AzDoProject {
         .DESCRIPTION
             Creates a new Azure DevOps project
 
+            Dot source this file before being able to use the function in this file. 
+            To load the function into memory execute the following in the shell or create an entry in the $PROFILE:
+            . .\New-AzDoProject.ps1
+
         .PARAMETER organizationName
             The name of the Azure DevOps organization
 
