@@ -5,6 +5,10 @@ function Get-AzDoProjects {
         
         .DESCRIPTION
             Get a list of projects in an Azure DevOps organization
+
+            Dot source this file before being able to use the function in this file. 
+            To load the function into memory execute the following in the shell or create an entry in the $PROFILE:
+            . .\Get-AzDoProjects.ps1
         
         .PARAMETER organizationName
             The name of the Azure DevOps organization

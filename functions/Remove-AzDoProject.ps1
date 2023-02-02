@@ -6,6 +6,10 @@ function Remove-AzDoProject {
         .DESCRIPTION
             Deletes an Azure DevOps Project using the Project Id
 
+            Dot source this file before being able to use the function in this file. 
+            To load the function into memory execute the following in the shell or create an entry in the $PROFILE:
+            . .\Remove-AzDoProject.ps1
+
         .PARAMETER organizationName
             The name of the Azure DevOps organization
 
