@@ -27,6 +27,8 @@ function Get-AzDoProjects {
                 apiVersion = '5.0'
             }
 
+            Get-AzDoProjects @params
+
         .EXAMPLE
             Get-AzDoProjects -organizationName 'exampleOrganizationName' -personalAccessToken 'examplePat'
     #>
@@ -74,7 +76,8 @@ function Get-AzDoProjects {
             $listProjects = Invoke-RestMethod @params
         }
         catch {
-            <#Do this if a terminating exception happens#>
+            Write-Error "Failed to get the list of projects..."
+            Write-Error $_
         }
         if ($listProjects) {
             $projects = $listProjects.value
